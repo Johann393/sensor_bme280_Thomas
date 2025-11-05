@@ -12,21 +12,20 @@ Isso viabiliza medições dessas 2 grandezas via protocolo I2C ou SPI.
 - Tensão/consumo típicos:
   Tensão/alimentação (VDD): 1.71 V a 3.6 V
   Tensão de interace (VDDIO): 1.2 V a 3.6 V
-  Consumo tipico com atualização de 1 Hz: Umidade + temperatura (1.8 µA); pressão + temperatura (2.8 µA); Os 3 (3.6 µA); Modo sono (0.1 µA)
-- Faixa de medição / resolução: 
-  Faixa operacional de temperatura: -40°C à +85°C
-  Faixa operacional de umidade: 0 a 100% de umidade relativa
-  Faixa operacional de pressão: 300 hPa - 1100 hPa
-  *para o medidor de umidade prcisão tipica de +- 3% e ruído RMS da pressão 0,2 Pa ( 1,7 cm em altitude)
-  Resolução interna: pressão ate 0.16 Pa; temperatura até 0.1°C; umidade até 0.008% (umidade relativa)
+  Consumo típico: Modo normal(1 Hz) 2.74 µA; Modo forçado(medição única) 2.0 µA; Modo sono 0.1 µA
+- Faixa de medição / resolução:
+  Temperatura: faixa operacional -40°C até 85°C; resolução típica 0.01°C; precisão típica +-1°C
+  Pressão: faixa operacional 300 hPa a 1100 hPa; resolução interna até 0.16 hPA; precisão típica +- 0.12 hPa
+  Comunicação: I2C(até 3.4MHz) ou SPI(até 10MHz)
+   
+
   
-- Datasheet (URL): https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf?utm_source=chatgpt.com
+- Datasheet (URL): (https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf)
 
 ## 2. Conexões de hardware
 - Tabela indicando as conexões entre BitDogLab e sensor:
 
-<img width="761" height="210" alt="image" src="https://github.com/user-attachments/assets/c824b305-e7e9-4d2f-a017-265cf89998e3" />
-
+<img width="757" height="206" alt="image" src="https://github.com/user-attachments/assets/e347c730-1fc1-43e9-9e4d-393f0c2b5772" />
 
 Foi usado um conector JST-PH de 4 pinos
 ![IMG_8234-min](https://github.com/user-attachments/assets/41aaee4c-3e40-4321-977a-55639e567145)
@@ -34,7 +33,6 @@ Foi usado um conector JST-PH de 4 pinos
 Na imagem temos 3 endereços. O endreço do OLED é o 0x3c e o do sensor é o 0x76. Para verificar os endereços, o código que foi usado está dispoível 
 na pasta test
 ![IMG_8235-min](https://github.com/user-attachments/assets/b5bde196-2f79-4ac2-a398-b7e57ea66abc)
-
 
 
 ## 3. Dependências
@@ -47,18 +45,19 @@ na pasta test
 ```bash
 # MicroPython (Thonny): Instale primeiro o firmware MicroPython na RP2040. Depois abra o seu editor de texto de preferência compatível com
   MicroPython (para este teste foi usado o Thonny) e em seguida conecte a bitdoglab via USB no computador e o conector JST-PH de 4 pinos na bitdog com
-  a pinagem da tabela já listada acima. Copie o arquivo bmp280.py deste repositório https://github.com/dafvid/micropython-bmp280 e abra com o Thonny, depois clique em "salvar como" e salve na RP2040 com o nome bmp280.py. Agora basta apenas executar o código desejado das pasatas test ou src.
+  a pinagem da tabela já listada acima. Copie o arquivo bmp280.py deste repositório https://github.com/dafvid/micropython-bmp280 e abra com o Thonny, depois clique em "salvar como" e salve na RP2040 com o nome bmp280.py. Agora basta apenas executar o código desejado das pastas test/ ou src/.
 ```
 
 ## 5. Exemplos de uso
-- `src/leitura_bruta_e_filtrado.py` — leituras brutas do sensor e leitura com média móvel para suavizar o ruído.  
-- `test/adress` — código para encontrar o endereço do sensor  
+- `src/leitura_bruta_e_filtrado.py` — leitura bruta do sensor e leitura com média móvel para suavizar o ruído.  
+- `test/adress` — código para encontrar o endereço(adress) do sensor  
 
 ## 6. Resultados e validação
 - Prints/plots, fotos do setup, limitações, ruídos, dicas.
 
 -Resultados do leitura_bruta_e_filtrado.py
-<img width="425" height="207" alt="image" src="https://github.com/user-attachments/assets/6ca90974-d98f-4523-8fb9-3e3894832c10" />
+<img width="425" height="207" alt="image" src="https://github.com/user-attachments/assets/a8f861c7-1fc0-464d-b3dc-a2d41cad857f" />
+
 
 
 ## 7. Licença
