@@ -47,12 +47,12 @@ na pasta test
 ```bash
 # MicroPython (Thonny): Instale primeiro o firmware MicroPython na RP2040. Depois abra o seu editor de texto de preferência compatível com
   MicroPython (para este teste foi usado o Thonny) e em seguida conecte a bitdoglab via USB no computador e o conector JST-PH de 4 pinos na bitdog com
-  a pinagem da tabela já listada acima. Salve os arquivos na placa(File → Save to device: main.py, ssd1306.py e bme280.py), reinicie ela e depois o script main rodará automaticamente.
+  a pinagem da tabela já listada acima. Copie o arquvio bme280_float deste repositório https://github.com/robert-hh/BME280/blob/master/bme280_float.py e abra com o Thonny, depois clique em "salvar como" e salve na RP2040 com o nome bme280.py. Agora basta apenas executar o código desejado das pasatas test ou src.
 ```
 
 ## 5. Exemplos de uso
-- `src/exemplo_basico.py` — leitura bruta  
-- `src/exemplo_filtrado.py` — leitura com média móvel  
+- `src/exemplo_basico.py` — leituras brutas do sensor sem filtragem.  
+- `src/exemplo_filtrado.py` — leitura com média móvel aplicada para suavizar o ruído. 
 - `test/` — códigos de teste com instruções  
 
 ## 6. Resultados e validação
