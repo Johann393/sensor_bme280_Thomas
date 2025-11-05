@@ -1,14 +1,14 @@
-# <NOME DO SENSOR> — Sensores na BitDogLab
+# BMP280 — Sensores na BitDogLab
 
 Thomas Johann Hillermann Gomes (206624 / @Johann393) 
 **Turma:** EA701 — 2025S2  
 **Repositório:** https://github.com/Johann393/sensor_bme280_Thomas
 
 ## 1. Descrição do sensor
-- Fabricante / modelo: Fabricado pela Bosch Sensortec e o modelo é o BME280
-- Princípio de funcionamento: É um sensor ambiental digital que mede temperatura, umidade relativa e pressão barométrica.
-A parte da umidade utilza um sensor capacitivo/resistivo e as partes de pressão e temperatura usam a tecnologia MEMs da Bosch.
-Isso viabiliza medições dessas 3 grandezas via protocolo I2C ou SPI. 
+- Fabricante / modelo: Fabricado pela Bosch Sensortec e o modelo é o BMP280
+- Princípio de funcionamento: É um sensor ambiental digital que mede temperatura e pressão barométrica.
+  As partes de pressão e temperatura usam a tecnologia MEMs da Bosch.
+Isso viabiliza medições dessas 2 grandezas via protocolo I2C ou SPI. 
 - Tensão/consumo típicos:
   Tensão/alimentação (VDD): 1.71 V a 3.6 V
   Tensão de interace (VDDIO): 1.2 V a 3.6 V
