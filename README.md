@@ -28,12 +28,6 @@ Isso viabiliza medições dessas 3 grandezas via protocolo I2C ou SPI.
 Tabela
 <img width="761" height="210" alt="image" src="https://github.com/user-attachments/assets/c824b305-e7e9-4d2f-a017-265cf89998e3" />
 
-BME 280  |  Bitdoglab(RP2040) | Descrição
-
-VCC      |  3.3 V             | Alimentação
-GND      |  GND               | Terra
-SDA      |  SDA               | Serial data (GPIO 0)
-SCL      |  SCL               | Serial clock (GPIO 1)
 
 Foi usado um conector JST-PH de 4 pinos
 ![IMG_8234-min](https://github.com/user-attachments/assets/41aaee4c-3e40-4321-977a-55639e567145)
