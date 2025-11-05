@@ -2,7 +2,7 @@
 
 Thomas Johann Hillermann Gomes (206624 / @Johann393) 
 **Turma:** EA701 — 2025S2  
-**Repositório:** (URL deste repo)
+**Repositório:** https://github.com/Johann393/sensor_bme280_Thomas
 
 ## 1. Descrição do sensor
 - Fabricante / modelo: Fabricado pela Bosch Sensortec e o modelo é o BME280
