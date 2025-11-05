@@ -31,7 +31,8 @@ Isso viabiliza medições dessas 3 grandezas via protocolo I2C ou SPI.
 Foi usado um conector JST-PH de 4 pinos
 ![IMG_8234-min](https://github.com/user-attachments/assets/41aaee4c-3e40-4321-977a-55639e567145)
 
-Na imagem temos 3 endereços. O endreço do OLED é o 0x3c e o do sensor é o 0x76
+Na imagem temos 3 endereços. O endreço do OLED é o 0x3c e o do sensor é o 0x76. Para verificar os endereços, o código que foi usado está dispoível 
+na pasta test
 ![IMG_8235-min](https://github.com/user-attachments/assets/b5bde196-2f79-4ac2-a398-b7e57ea66abc)
 
 
@@ -41,6 +42,7 @@ Na imagem temos 3 endereços. O endreço do OLED é o 0x3c e o do sensor é o 0x
 - Bibliotecas utilizadas: machine(nativa), time(nativa), ssd1306.py, bme280.py
 - Como instalar (passo a passo): Baixe o seu editor de texto de preferência compatível com
   MicroPython (para este teste foi usado o Thonny).
+  
 ## 4. Como executar
 ```bash
 # MicroPython (Thonny): Instale primeiro o firmware MicroPython na RP2040. Depois abra o seu editor de texto de preferência compatível com
