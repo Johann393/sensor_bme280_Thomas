@@ -56,7 +56,17 @@ na pasta test
 - Prints/plots, fotos do setup, limitações, ruídos, dicas.
 
 -Resultados do leitura_bruta_e_filtrado.py
-<img width="425" height="207" alt="image" src="https://github.com/user-attachments/assets/a8f861c7-1fc0-464d-b3dc-a2d41cad857f" />
+<img width="418" height="247" alt="image" src="https://github.com/user-attachments/assets/c74fd072-d1e1-4a59-9b74-ad79c9b85035" />
+
+No mesmo local e instante da medição: 26°C e 1015 hPa (Barão geraldo Campinas dia 05/11/25 15:55)
+Vale notar que os meios consultados para saber a temperatura e pressão do local podem não ser tão exatos.
+
+limitações e ruídos:
+Distorções causadas por aquecimento do microcontrolador próximo ao sensor e instabilidades quando o local está com corrente de ar
+
+Dicas: Usar o sensor fora de fontes de calor ou de luz solar direta; garantir que o sensor seja usado em um abiente externo para melhor precisão
+
+Resultados: 
 
 
 
