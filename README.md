@@ -39,7 +39,7 @@ na pasta test
 
 ## 3. Dependências
 - MicroPython/C versão: MicroPython para RP2040 e a versão usada/recomendada é a v1.22.1 ou superior
-- Bibliotecas utilizadas: machine(nativa), time(nativa), ssd1306.py, bme280.py
+- Bibliotecas utilizadas: machine(nativa), time(nativa), ssd1306.py, bmp280.py
 - Como instalar (passo a passo): Baixe o seu editor de texto de preferência compatível com
   MicroPython (para este teste foi usado o Thonny).
   
@@ -47,7 +47,7 @@ na pasta test
 ```bash
 # MicroPython (Thonny): Instale primeiro o firmware MicroPython na RP2040. Depois abra o seu editor de texto de preferência compatível com
   MicroPython (para este teste foi usado o Thonny) e em seguida conecte a bitdoglab via USB no computador e o conector JST-PH de 4 pinos na bitdog com
-  a pinagem da tabela já listada acima. Copie o arquvio bme280_float deste repositório https://github.com/robert-hh/BME280/blob/master/bme280_float.py e abra com o Thonny, depois clique em "salvar como" e salve na RP2040 com o nome bme280.py. Agora basta apenas executar o código desejado das pasatas test ou src.
+  a pinagem da tabela já listada acima. Copie o arquivo bmp280.py deste repositório https://github.com/dafvid/micropython-bmp280 e abra com o Thonny, depois clique em "salvar como" e salve na RP2040 com o nome bmp280.py. Agora basta apenas executar o código desejado das pasatas test ou src.
 ```
 
 ## 5. Exemplos de uso
@@ -57,6 +57,10 @@ na pasta test
 
 ## 6. Resultados e validação
 - Prints/plots, fotos do setup, limitações, ruídos, dicas.
+
+-Resultados do leitura_bruta_e_filtrado.py
+<img width="425" height="207" alt="image" src="https://github.com/user-attachments/assets/6ca90974-d98f-4523-8fb9-3e3894832c10" />
+
 
 ## 7. Licença
 - Ver arquivo `LICENSE`.
