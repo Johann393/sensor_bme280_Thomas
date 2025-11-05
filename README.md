@@ -51,9 +51,8 @@ na pasta test
 ```
 
 ## 5. Exemplos de uso
-- `src/exemplo_basico.py` — leituras brutas do sensor sem filtragem.  
-- `src/exemplo_filtrado.py` — leitura com média móvel aplicada para suavizar o ruído. 
-- `test/` — códigos de teste com instruções  
+- `src/leitura_bruta_e_filtrado.py` — leituras brutas do sensor e leitura com média móvel para suavizar o ruído.  
+- `test/adress` — código para encontrar o endereço do sensor  
 
 ## 6. Resultados e validação
 - Prints/plots, fotos do setup, limitações, ruídos, dicas.
