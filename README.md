@@ -17,7 +17,7 @@ Isso viabiliza medições dessas 3 grandezas via protocolo I2C ou SPI.
   Faixa operacional de temperatura: -40°C à +85°C
   Faixa operacional de umidade: 0 a 100% de umidade relativa
   Faixa operacional de pressão: 300 hPa - 1100 hPa
-  *para o medidor de umidade prcisão tipica de +- 3% e ruído RMS da pressão ~0,2 Pa (~ 1,7 cm em altitude)
+  *para o medidor de umidade prcisão tipica de +- 3% e ruído RMS da pressão 0,2 Pa ( 1,7 cm em altitude)
   Resolução interna: pressão ate 0.16 Pa; temperatura até 0.1°C; umidade até 0.008% (umidade relativa)
   
 - Datasheet (URL): https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf?utm_source=chatgpt.com
@@ -25,7 +25,6 @@ Isso viabiliza medições dessas 3 grandezas via protocolo I2C ou SPI.
 ## 2. Conexões de hardware
 - Tabela indicando as conexões entre BitDogLab e sensor:
 
-Tabela
 <img width="761" height="210" alt="image" src="https://github.com/user-attachments/assets/c824b305-e7e9-4d2f-a017-265cf89998e3" />
 
 
