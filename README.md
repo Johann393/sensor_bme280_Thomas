@@ -25,6 +25,9 @@ Isso viabiliza medições dessas 3 grandezas via protocolo I2C ou SPI.
 ## 2. Conexões de hardware
 - Tabela indicando as conexões entre BitDogLab e sensor:
 
+Tabela
+<img width="761" height="210" alt="image" src="https://github.com/user-attachments/assets/c824b305-e7e9-4d2f-a017-265cf89998e3" />
+
 BME 280  |  Bitdoglab(RP2040) | Descrição
 
 VCC      |  3.3 V             | Alimentação
